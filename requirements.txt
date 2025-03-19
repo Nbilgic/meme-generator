@@ -1,0 +1,4 @@
+requests >= 2.13.0
+flask >= 3.1.0
+python-docx
+pillow~=11.1.0
