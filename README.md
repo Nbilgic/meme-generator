@@ -18,5 +18,6 @@ python src/meme.py --body "Life is what happens" --author "John Lennon" --path "
 
 
 **HOW TO RUN THE PROGRAM ON WEB INTERFACE**
+
 Run app.py. Open the link displayed in terminal. Create either a random meme or give an image url, body and author as a parameter to create a new meme.
 
