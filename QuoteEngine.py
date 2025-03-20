@@ -1,7 +1,7 @@
 """Module to handle quotes from different type of resources."""
 import os
 import subprocess
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class QuoteModel:
@@ -18,12 +18,12 @@ class QuoteModel:
 
 
 class IngestorInterface(ABC):
-    """Abstract class to guide implementation of other ingestor classses."""
+    """Abstract class to guide implementation of other ingestor classes."""
 
     allowed_extensions = ['txt', 'pdf', 'csv', 'docx']
 
-    @classmethod
-    def parse(cls, path):
+    @abstractmethod
+    def parse(self, path):
         """Abstract method to parse a file."""
         raise NotImplementedError("Subclasses should implement this method")
 
